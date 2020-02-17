@@ -8,6 +8,7 @@ public class Operar_arrays {
 		imprimir_array();
 		sumar_array();
 		multiplicar_array();
+		restar_array();
 	}
 	
 	private static void rellenar_array() {
@@ -39,4 +40,11 @@ public class Operar_arrays {
 		System.out.println(multiplicacion);
 	}
 
+	private static void restar_array() {
+		int resta = 0;
+		for (int i = 0; i < ARRAY.length; i++) {
+			resta -= ARRAY[i];
+		}
+		System.out.println(resta);
+	}
 }
