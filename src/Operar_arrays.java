@@ -7,6 +7,7 @@ public class Operar_arrays {
 		rellenar_array();
 		imprimir_array();
 		sumar_array();
+		multiplicar_array();
 	}
 	
 	private static void rellenar_array() {
@@ -28,6 +29,14 @@ public class Operar_arrays {
 			suma += ARRAY[i];
 		}
 		System.out.println(suma);
+	}
+	
+	private static void multiplicar_array() {
+		int multiplicacion = 1;
+		for (int i = 0; i < ARRAY.length; i++) {
+			multiplicacion *= ARRAY[i];
+		}
+		System.out.println(multiplicacion);
 	}
 
 }
